@@ -20,11 +20,16 @@ def calculator ():
         print("Result:", a * b)
 
     elif option == "4":
-        print("Result:", a / b)
+        
+        if b==0:
+            print("Error: Division by zero")
+        else:
+            print("Result:", a / b)
+
         
 
     else :
-        print("Error")
+        print("Unknown operator:",option)
 
 
    
